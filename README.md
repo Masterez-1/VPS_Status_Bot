@@ -36,7 +36,7 @@ Seguí estos pasos para instalar y ejecutar el bot en la VPS:
 3. **Iniciar el bot**:
    ```bash
    cd VPS_Status_Bot
-   sudo node index.js
+   sudo node Status_VPS.js
 
 ## Comandos disponibles
 1. **Ver el estado de la VPS**:
