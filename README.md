@@ -16,13 +16,13 @@ Para ejecutar este bot en tu propio VPS o servidor, necesitas cumplir con los si
 
 - [Node.js](https://nodejs.org/) (versión 16 o superior).
 - [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/) para gestionar dependencias.
-- Un token de bot de Discord. Si aún no tenés uno, [Acá podés crear un bot en Discord](https://discord.com/developers/applications).
+- Un token de bot de Discord. Si todavía no tenés uno, [Acá podés crear un bot en Discord](https://discord.com/developers/applications).
 - Instalar Screen en la VPS para dejar la terminal abierta. [Acá una guía de como instalarlo](https://www.ochobitshacenunbyte.com/2019/04/24/que-es-y-como-funciona-el-comando-screen-en-linux/)
 - Un VPS o servidor donde se va a ejecutar el bot.
 
 ## Instalación
 
-Sigue estos pasos para instalar y ejecutar el bot:
+Seguí estos pasos para instalar y ejecutar el bot en la VPS:
 
 1. **Clona este repositorio en la VPS**:
    ```bash
@@ -42,18 +42,26 @@ Sigue estos pasos para instalar y ejecutar el bot:
 1. **Ver el estado de la VPS**:
    ```bash
    /estado
-   
-2. **Ver los procesos en la VPS**:
-   ```bash
    /procesos
-
-3. **Ejecutar comandos en la VPS**:
-   ```bash
+   /ayuda
    /ejecutar <Comando>
    
+## Enviar alerta del uso del CPU/RAM
+1. **Esto se configura en el código**
+   ```Js
+   function verificarUsoRecursos() {
+    obtenerEstadoVPS().then((estado) => {
+        if (estado.cpuUso > 90 || estado.ramUso > 90) {
+            client.users.fetch('Acá_ID_De_Tu_Discord').then((user) => {
+                user.send(`⚠️ ¡Alerta! El uso de recursos del VPS es alto: CPU: ${estado.cpuUso}%, RAM: ${estado.ramUso}%`);
+            });
+        }
+    });
+   }
+
 
 ## Librerias utilizadas
-```Js
+```JavaScript
    node-fetch
    os-utils
    child_proces
