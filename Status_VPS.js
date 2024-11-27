@@ -7,7 +7,7 @@ const diskusage = require('diskusage');
 const si = require('systeminformation');
 
 
-const TOKEN = 'Toke_De_Tu_Bot';
+const TOKEN = 'Token_De_Tu_Bot';
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -138,7 +138,7 @@ client.on('interactionCreate', async (interaction) => {
         const embedProcesos = new EmbedBuilder()
             .setColor('#00ff00')
             .setTitle('🔎 Procesos del VPS')
-            .setDescription('Los 10 procesos mÃ¡s consumidos en el VPS:')
+            .setDescription('Los 10 procesos máss consumidos en el VPS:')
             .addFields(
                 { name: 'Procesos', value: `\`\`\`${procesos}\`\`\``, inline: false },
             )
