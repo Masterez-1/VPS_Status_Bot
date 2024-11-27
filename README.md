@@ -7,7 +7,7 @@ El **VPS Manager Bot** es un bot de Discord diseñado para ayudar a los administ
 - **Monitoreo en tiempo real del VPS**: Obtiene y muestra estadísticas como el uso de CPU, RAM, espacio en disco, temperatura de la CPU y más.
 - **Ejecuta comandos del sistema**: Permite ejecutar comandos directamente desde Discord, lo que facilita la administración del servidor.
 - **Alertas de alto uso de recursos**: Envia una alerta si el uso de CPU o RAM cundo se supera el limite definido (por defecto 90%).
-- **Muestra procesos activos**: Muestra los primeros 20 procesos activos en el VPS.
+- **Muestra procesos activos**: Muestra los primeros 10 procesos activos en el VPS que más consuman.
 - **Interacción fácil desde Discord**: Utiliza comandos simples para obtener información y ejecutar acciones en el VPS.
 
 ## Requisitos
