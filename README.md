@@ -1,6 +1,29 @@
 # VPS Manager Bot
 
-El **VPS Manager Bot** es un bot de Discord diseñado para ayudar a los administradores a monitorear y gestionar el estado de su VPS (Servidor Privado Virtual) directamente desde Discord. Este bot proporciona información sobre el uso de recursos del VPS, ejecuta comandos del sistema, muestra el estado del servidor en tiempo real y envía alertas si el uso de CPU o RAM supera los umbrales definidos en el código. Es una buena opción si se desea monitorear de manera remota y más facilmente.
+El **VPS Manager Bot** es un bot de Discord diseñado para ayudar a los administradores a monitorear y gestionar el estado de su VPS (Servidor Privado Virtual) directamente desde Discord. 
+
+Este bot proporciona:
+- Información sobre el uso de recursos del VPS.
+- Ejecución de comandos del sistema.
+- Monitoreo en tiempo real del estado del servidor.
+- Alertas si el uso de CPU o RAM supera los umbrales definidos en el código.
+
+Es una herramienta ideal para monitoreo remoto de servidores de manera fácil y eficiente.
+
+---
+
+## Imágenes de ejemplo
+
+### Estado del servidor:
+![Estado](https://media.discordapp.net/attachments/995115932756217887/1311157170103910471/image.png?ex=6747d5c5&is=67468445&hm=fe3516502ac70a19c47b3465a4332267993c5181afca0970b88fa559509de017&=&format=webp&quality=lossless&width=333&height=358)
+
+### Monitoreo de procesos:
+![Procesos](https://media.discordapp.net/attachments/1104825443015737526/1311284502739423312/image.png?ex=67484c5b&is=6746fadb&hm=5fb94a113d73c2c0aa09ec4be5047b6d20ba630f093b4c81cd691e7deb45e468&=&format=webp&quality=lossless&width=449&height=472)
+
+### Alertas:
+![Alertas](https://media.discordapp.net/attachments/995115932756217887/1311144904482881617/image.png?ex=6747ca59&is=674678d9&hm=e5f3d69601858d771d6f6b18aad78f9f41a76333aaf7571e4d9dc7c9674dca07&=&format=webp&quality=lossless&width=495&height=172)
+
+
 
 ## Características
 
