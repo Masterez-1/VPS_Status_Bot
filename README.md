@@ -38,11 +38,25 @@ Sigue estos pasos para instalar y ejecutar el bot:
    cd VPS_Status_Bot
    sudo node index.js
 
+## Comandos disponibles
+1. **Ver el estado de la VPS**:
+   ```bash
+   /estado
+   
+2. **Ver los procesos en la VPS**:
+   ```bash
+   /procesos
+
+3. **Ejecutar comandos en la VPS**:
+   ```bash
+   /ejecutar <Comando>
+   
+
 ## Librerias utilizadas
-```javaScript
-node-fetch
-os-utils
-child_proces
-diskusage
-systeminformation
+```Js
+   node-fetch
+   os-utils
+   child_proces
+   diskusage
+   systeminformation
 
