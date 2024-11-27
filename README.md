@@ -61,10 +61,21 @@ Seguí estos pasos para instalar y ejecutar el bot en la VPS:
 
 
 ## Librerias utilizadas
-```JavaScript
-   node-fetch
-   os-utils
-   child_proces
-   diskusage
-   systeminformation
+1. Instalar las librerias en la VPS
+   ```JavaScript
+   sudo npm node-fetch
+   sudo npm os-utils
+   sudo npm child_proces
+   sudo npm diskusage
+   sudo npm systeminformation
 
+## Errores al hacer las importaciones
+1. En caso de que de problemas las importaciones remplazar los siguiente, varia según la VPS
+```Js
+const { Client, GatewayIntentBits, MessageActionRow, MessageButton, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder } = require('@discordjs/builders'); 
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
+const os = require('os-utils');
+const { exec } = require('child_process');
+const diskusage = require('diskusage');
+const si = require('systeminformation');
